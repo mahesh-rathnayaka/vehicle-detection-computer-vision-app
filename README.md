@@ -14,6 +14,7 @@ This project trains a simple convolutional neural network to classify whether a 
 
 ```text
 vehicle-detection-project/
+├── test_video.py
 ├── dataset/
 │   ├── non-vehicles/
 │   └── vehicles/
@@ -81,7 +82,7 @@ python detect_vehicle.py
 Current inference behavior:
 
 - Loads the model from `../saved_model/vehicle_model.h5`
-- Opens `detection/test_video.mp4`
+- Opens `C:/Users/usr/Desktop/vehicle-detection-project/detection/test_video.mp4` (hardcoded absolute path)
 - Uses the lower half of each frame as the region of interest
 - Resizes the ROI to `64x64`
 - Runs prediction on each frame
